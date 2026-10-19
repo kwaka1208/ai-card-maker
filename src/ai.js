@@ -5,6 +5,10 @@
 // 実測では 1 回 400〜600 ほど使い、200 にすると本文が空になりました
 const MAX_TOKENS = 3000;
 
+// async は「この関数の中に、終わるまで時間がかかる処理がある」という印です。
+// AI の返事が届くまでには数秒かかります。async をつけた関数の中では await が使えて、
+// 「返事が届くまでここで待ち、届いたら次の行へ進む」と書けます。
+// 待っている間もサーバーは止まらず、ほかの人からの注文を受け付けられます。
 export async function askAI(config, messages) {
   const startTime = Date.now(); // かかった時間を測り始める
   const body = {
