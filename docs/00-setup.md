@@ -8,7 +8,7 @@
 
 ### やること
 
-1. 講師から伝えられた教材のページを開きます
+1. このリポジトリのページを開きます
 2. 画面右上の緑色の「Use this template」ボタンを押し、「Create a new repository」を選びます
 3. 「Repository name」に好きな名前を入れます（例：`my-card-maker`）
 4. その下の公開範囲は「Private」を選びます

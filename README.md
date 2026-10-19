@@ -8,7 +8,7 @@
 
 1. このリポジトリの「Use this template」→「Create a new repository」で、自分のリポジトリを作る
 2. 作ったリポジトリで「Code」→「Codespaces」→「Create codespace on main」を押す
-3. ターミナルで `cp .env.example .env` を実行し、`.env` の `=` の後ろに講師から受け取ったキーを貼って保存する
+3. ターミナルで `cp .env.example .env` を実行し、`.env` の `=` の後ろに取得したキーを貼って保存する
 4. ターミナルで `npm start` を実行する
 5. 開いたブラウザの画面で言葉を入れて「つくる」を押す
 
@@ -28,7 +28,7 @@
 | [05 壊れた返事](docs/05-broken-json.md) | AI の返事が使えなくなる様子を見る。チェックとやり直しの意味 | 10分 |
 | [06 発展](docs/06-challenge.md) | デザインを変える、モデルを比べる、対戦機能を作る など | 10分〜 |
 
-講師の方は [講師向け資料](docs/instructor.md) を先に読んでください。
+学校の授業などで利用する場合は [講師向け資料](docs/instructor.md) を先に読んでください。
 
 ## ファイルの地図
 

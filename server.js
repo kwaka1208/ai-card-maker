@@ -45,7 +45,7 @@ function checkToken() {
   if (token.trim() === "") {
     console.error("");
     console.error("【.env にキーが入っていません】");
-    console.error(".env を開き、SAKURA_AI_TOKEN= の後ろに講師から受け取ったキーを貼って保存してください。");
+    console.error(".env を開き、SAKURA_AI_TOKEN= の後ろに取得した受け取ったキーを貼って保存してください。");
     console.error("保存したら、Ctrl + C でサーバーを止めて、もう一度  npm start  を実行してください。");
     console.error("");
     process.exit(1);
@@ -160,7 +160,7 @@ app.post("/api/card", makeCard);
 // 思わぬエラーが起きても、サーバーを止めずに日本語で返す
 app.use((error, request, response, next) => {
   console.error(error);
-  response.status(500).json({ ok: false, error: "サーバーで思わぬエラーが起きました。ターミナルの表示を講師に見せてください" });
+  response.status(500).json({ ok: false, error: "サーバーで思わぬエラーが起きました。ターミナルの表示を確認してください" });
 });
 
 app.listen(PORT, (error) => {
