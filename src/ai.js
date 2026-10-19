@@ -50,6 +50,6 @@ export async function askAI(config, messages) {
 function toJapanese(status) {
   if (status === 401 || status === 403) return "キーが正しくないようです。.env を確認してください";
   if (status === 429) return "混み合っています。少し待ってからもう一度押してください";
-  if (status === 400 || status === 404) return "AI が受け付けてくれませんでした。config.js の model の名前を確認してください";
+  if (status === 400 || status === 404) return "AI が受け付けてくれませんでした。config.js の model や temperature を確認してください";
   return "AI のサーバーにつながりませんでした。もう一度押してください";
 }
